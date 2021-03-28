@@ -11,7 +11,7 @@
 					>Connor Rothschild</a
 				>. The source code is available on
 				<a
-					href="https://github.com/connorrothschild/connorrothschild.com"
+					href="https://github.com/connorrothschild/nuxt-blog-starter"
 					target="_blank"
 					rel="noopener noreferrer"
 					class="link"

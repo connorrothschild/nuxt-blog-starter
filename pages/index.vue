@@ -2,7 +2,7 @@
 	<div class="main-body">
 		<Nav color="is-primary" />
 		<Hero />
-		<!-- <Footer /> -->
+		<Footer />
 	</div>
 </template>
 

@@ -97,7 +97,7 @@ export default {
 	h1 {
 		font-weight: bold;
 		font-size: 1.8rem;
-		margin: 0.75rem 0;
+		margin: 1rem 0;
 		@media screen and (max-width: 768px) {
 			font-size: 1.4rem;
 		}
@@ -105,7 +105,7 @@ export default {
 	h2 {
 		font-weight: bold;
 		font-size: 1.6rem;
-		margin: 0.75rem 0;
+		margin: 1rem 0;
 		@media screen and (max-width: 768px) {
 			font-size: 1.3rem;
 		}
@@ -113,7 +113,7 @@ export default {
 	h3 {
 		font-weight: bold;
 		font-size: 1.4rem;
-		margin: 0.75rem 0;
+		margin: 1rem 0;
 		@media screen and (max-width: 768px) {
 			font-size: 1.2rem;
 		}
@@ -140,8 +140,18 @@ export default {
 		list-style: inside !important;
 	}
 
-	.img {
-		padding: 1rem 0;
+	// .img {
+	// 	padding: 1rem 0;
+	// }
+
+	// Give a padding to anything that follows an image, except another image
+	.img + :not(.img) {
+		margin-top: 1rem;
+	}
+
+	// And same for if the image follows anything that is not an image
+	:not(.img) + .img {
+		margin-top: 1rem;
 	}
 }
 // Hover icon link

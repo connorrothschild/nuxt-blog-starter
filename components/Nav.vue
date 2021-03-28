@@ -40,8 +40,6 @@
 				<a
 					class="navbar-item"
 					href="#"
-					target="_blank"
-					rel="noopener"
 				>
 					Resume
 				</a>
