@@ -27,9 +27,4 @@ export default {
 body {
 	color: $text;
 }
-
-section {
-	content-visibility: auto;
-	content-intrinsic-size: 0 100vh;
-}
 </style>

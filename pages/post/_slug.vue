@@ -56,8 +56,8 @@ export default {
 				type: "article",
 				title: this.post.title,
 				description: this.post.description,
+				// FIXME:
 				url: `https://connorrothschild.com/post/${this.$route.params.slug}`,
-				mainImage: `https://connorrothschild.com/post/${this.post.img}`,
 				mainImage: `https://raw.githubusercontent.com/connorrothschild/connorrothschild.com/master/assets/images/post/${this.post.img}`,
 			};
 			return getSiteMeta(metaData);
@@ -83,6 +83,7 @@ export default {
 				{
 					hid: "canonical",
 					rel: "canonical",
+					// FIXME:
 					href: `https://connorrothschild.com/post/${this.$route.params.slug}`,
 				},
 			],
