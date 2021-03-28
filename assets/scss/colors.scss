@@ -1,0 +1,63 @@
+/* Import Bulma Utilities */
+@import '~bulma/sass/utilities/initial-variables';
+@import '~bulma/sass/utilities/functions';
+
+$black: rgb(15,15,15);
+
+// Applies to: body text;
+$text: $black;
+
+// Applies to: titles; text bolded with <strong>
+$text-strong: #000000;   
+
+// Primary color
+$primary: whitesmoke; //#2b2f3d;
+$secondary: #B11F32; // #FFAE3A;
+
+.has-text-secondary {
+  color: $secondary !important;
+}
+
+.is-primary-gradient {
+  @extend .is-primary;
+	background-image: linear-gradient(0deg, black 0%, $primary 100%)
+}
+
+.is-primary-gradient-rev {
+  @extend .is-primary;
+	background-image: linear-gradient(0deg, $primary  0%, black 100%)
+}
+
+.has-underline-secondary {
+	border-bottom: 2px solid $secondary;
+}
+
+// Resolve Prism/Bulma conflicts 
+// https://www.darraghoriordan.com/2019/01/20/bulma-prismjs-in-gatsby-css-conflicts/
+.token.tag,
+.token.content,
+.token.number {
+  display: inline;
+  padding: inherit;
+  font-size: inherit;
+  line-height: inherit;
+  text-align: inherit;
+  vertical-align: inherit;
+  border-radius: inherit;
+  font-weight: inherit;
+  white-space: inherit;
+  background: inherit;
+  margin: inherit;
+}
+
+// Default prismJS comment highlighting doesn't pass accessibility checks (contrast is 2.7)
+.token.comment,
+.token.prolog,
+.token.doctype,
+.token.cdat {
+  color:#3D9970;
+}
+
+/* Import the rest of Bulma */
+@import '~bulma';
+
