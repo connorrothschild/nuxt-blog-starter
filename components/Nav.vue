@@ -31,18 +31,11 @@
 			:class="{ 'is-active': isVisible }"
 		>
 			<div class="navbar-end">
-				<NuxtLink class="navbar-item" :to="{ path: '/post' }">
-					Blog
-				</NuxtLink>
+				<NuxtLink class="navbar-item" :to="{ path: '/post' }"> Blog </NuxtLink>
 				<NuxtLink class="navbar-item" :to="{ path: '/about' }">
 					About
 				</NuxtLink>
-				<a
-					class="navbar-item"
-					href="#"
-				>
-					Resume
-				</a>
+				<a class="navbar-item" href="#"> Resume </a>
 			</div>
 		</div>
 	</nav>
