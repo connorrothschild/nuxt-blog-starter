@@ -38,7 +38,7 @@ export default {
 }
 
 a {
-	color: black;
+	color: $primary-invert;
 	&:hover {
 		color: $secondary;
 	}

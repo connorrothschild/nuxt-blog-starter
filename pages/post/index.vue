@@ -8,7 +8,7 @@
 				<!-- CONTAINER FOR PROJECTS -->
 				<div class="columns is-multiline">
 					<div v-for="(post, index) in posts" :key="index" class="column is-4">
-						<BlogCard v-bind="post" background="has-background-white" />
+						<BlogCard v-bind="post" background="has-background-primary" />
 					</div>
 				</div>
 			</article>

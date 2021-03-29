@@ -7,9 +7,7 @@
 	>
 		<div class="navbar-brand">
 			<NuxtLink class="navbar-item" to="/">
-				<span class="has-text-weight-boldest has-text-black"
-					>Connor Rothschild</span
-				>
+				<span class="has-text-weight-boldest">Connor Rothschild</span>
 			</NuxtLink>
 
 			<a

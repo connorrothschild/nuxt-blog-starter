@@ -1,7 +1,7 @@
 <template>
-	<div>
+	<div class="has-background-primary-off">
 		<Nav color="is-primary" />
-		<div class="fullscreen has-background-light">
+		<div class="fullscreen">
 			<article class="section container">
 				<div class="max-width-78ch">
 					<h1 class="section-title is-flex is-align-items-center">

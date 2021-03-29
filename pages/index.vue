@@ -1,6 +1,6 @@
 <template>
 	<div class="main-body">
-		<Nav color="is-primary" />
+		<Nav color="has-background-primary-off" />
 		<Hero />
 		<Footer />
 	</div>

@@ -2,7 +2,7 @@
 	<div class="columns">
 		<div class="column">
 			<HoverableCard :to="`/${type}/${next.slug}`" v-if="next">
-				<article class="card card-fullheight has-background-white">
+				<article class="card card-fullheight has-background-primary">
 					<div class="card-image" v-if="next.img">
 						<figure class="image is-2by1">
 							<WebP
@@ -28,7 +28,7 @@
 		<!-- <span v-else>&nbsp;</span> -->
 		<div class="column">
 			<HoverableCard :to="`/${type}/${prev.slug}`" v-if="prev">
-				<article class="card card-fullheight has-background-white">
+				<article class="card card-fullheight has-background-primary">
 					<div class="card-image" v-if="prev.img">
 						<figure class="image is-2by1">
 							<WebP
