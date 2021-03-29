@@ -2,6 +2,7 @@
 @import '~bulma/sass/utilities/initial-variables';
 @import '~bulma/sass/utilities/functions';
 
+// Off-black > black
 $black: rgb(15,15,15);
 
 // Applies to: body text;
@@ -10,27 +11,18 @@ $text: $black;
 // Applies to: titles; text bolded with <strong>
 $text-strong: #000000;   
 
-// Primary color
-$primary: whitesmoke; //#2b2f3d;
-$secondary: #B11F32; // #FFAE3A;
+// Primary colors
+// primary-off should be a slightly muted version of primary
+$primary: white;
+$primary-off: whitesmoke;
 
-.has-text-secondary {
-  color: $secondary !important;
-}
+$primary-invert: invert($primary);
 
-.is-primary-gradient {
-  @extend .is-primary;
-	background-image: linear-gradient(0deg, black 0%, $primary 100%)
-}
+// Secondary colors
+$secondary: #B11F32;
+$secondary-off: #920b1d;
 
-.is-primary-gradient-rev {
-  @extend .is-primary;
-	background-image: linear-gradient(0deg, $primary  0%, black 100%)
-}
-
-.has-underline-secondary {
-	border-bottom: 2px solid $secondary;
-}
+$secondary-invert: invert($secondary);
 
 // Resolve Prism/Bulma conflicts 
 // https://www.darraghoriordan.com/2019/01/20/bulma-prismjs-in-gatsby-css-conflicts/

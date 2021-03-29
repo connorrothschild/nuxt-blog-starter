@@ -1,6 +1,5 @@
 <template>
 	<div class="has-background-light p-4 mb-4 info-box">
-		<!-- <img src="~/assets/icons/exclamation.png" alt="Note" /> -->
 		<div><slot name="info-box"></slot></div>
 	</div>
 </template>

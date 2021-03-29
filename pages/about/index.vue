@@ -29,10 +29,14 @@
 export default {};
 </script>
 
-<style>
+<style scoped>
 .me {
 	max-width: 100px;
 	border-radius: 50%;
+}
+
+p {
+	font-size: 1.2rem;
 }
 
 p:not(:last-of-type) {

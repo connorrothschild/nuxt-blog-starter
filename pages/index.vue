@@ -23,8 +23,4 @@ export default {
 };
 </script>
 
-<style lang='scss' scoped>
-body {
-	color: $text;
-}
-</style>
+<style lang='scss' scoped></style>

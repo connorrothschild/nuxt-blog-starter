@@ -1,5 +1,5 @@
 <template>
-	<section class="hero is-primary is-fullheight">
+	<section class="hero is-primary is-primary-gradient is-fullheight">
 		<div class="hero-body">
 			<div>
 				<div>

@@ -16,5 +16,6 @@ export default {
 	props: ["url"],
 };
 </script>
+
 <style scoped>
 </style>

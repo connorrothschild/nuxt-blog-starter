@@ -3,12 +3,10 @@ title: "How to Blog"
 description: Getting started with the Nuxt Blog Starter template.
 img: welcome/header.png
 img_alt: 'Pikachu waving hello!'
-date: "2020-07-12"
+date: "2021-03-12"
 ---
 
-Welcome! Here's how to write a blog post. (Not how to write, but how to write a blog post *using this template*.)
-
-This post is written in [Markdown](https://daringfireball.net/projects/markdown/). Read the [syntax guide](https://www.markdownguide.org/basic-syntax/) to get started using Markdown easily.
+Welcome! Here's how to write a blog post. (Not how to write, but how to write a blog post *using this template*.) This post is written in [Markdown](https://daringfireball.net/projects/markdown/). Read the [syntax guide](https://www.markdownguide.org/basic-syntax/) to get started using Markdown easily.
 
 ### Images 
 

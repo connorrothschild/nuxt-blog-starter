@@ -1,11 +1,11 @@
 <template>
-	<div>
+	<div class="has-background-primary-off">
 		<Nav color="is-primary" />
-		<article class="section container is-max-tablet mt-6">
-			<h1 class="title has-text-weight-boldest is-size-3 is-size-4-mobile">
+		<article class="section max-width-78ch mt-6">
+			<h1 class="title has-text-weight-boldest is-size-2 is-size-4-mobile">
 				{{ post.title }}
 			</h1>
-			<h2 class="subtitle heading is-size-5 is-size-6-mobile">
+			<h2 class="subtitle heading is-size-6 has-text-weight-light">
 				{{ formatDate(post.date) }}
 			</h2>
 			<p class="subtitle is-size-5 is-size-6-mobile">
@@ -18,7 +18,7 @@
 			<div class="my-4">
 				<NuxtLink
 					to="/post"
-					class="subtitle has-text-weight-bolder is-size-5 link heading is-inline-block"
+					class="subtitle has-text-weight-light is-size-5 link heading is-inline-block"
 					>👈 Back to all posts</NuxtLink
 				>
 			</div>
@@ -129,8 +129,8 @@ export default {
 	}
 
 	p {
-		margin-bottom: 0.5rem;
-		font-size: 1rem;
+		margin-bottom: 1rem;
+		font-size: 1.1rem;
 
 		.nuxt-content p:last-child {
 			margin-bottom: 0;
@@ -140,10 +140,6 @@ export default {
 	li {
 		list-style: inside !important;
 	}
-
-	// .img {
-	// 	padding: 1rem 0;
-	// }
 
 	// Give a padding to anything that follows an image, except another image
 	.img + :not(.img) {
