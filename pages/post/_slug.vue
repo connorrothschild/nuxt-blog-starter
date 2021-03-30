@@ -56,9 +56,8 @@ export default {
 				type: "article",
 				title: this.post.title,
 				description: this.post.description,
-				// FIXME:
-				url: `https://connorrothschild.com/post/${this.$route.params.slug}`,
-				mainImage: `https://raw.githubusercontent.com/connorrothschild/connorrothschild.com/master/assets/images/post/${this.post.img}`,
+				url: `${this.$config.baseURL}/post/${this.$route.params.slug}`,
+				mainImage: `${this.$config.baseURL}/post/${this.post.img}`,
 			};
 			return getSiteMeta(metaData);
 		},

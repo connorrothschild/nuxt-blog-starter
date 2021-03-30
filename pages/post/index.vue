@@ -18,7 +18,28 @@
 </template>
 
 <script>
+import getSiteMeta from "~/utils/getSiteMeta.js";
 export default {
+	computed: {
+		meta() {
+			const metaData = {
+				url: `${this.$config.baseURL}/post`,
+			};
+			return getSiteMeta(metaData);
+		},
+	},
+	head() {
+		return {
+			meta: [...this.meta],
+			link: [
+				{
+					hid: "canonical",
+					rel: "canonical",
+					href: `${this.$config.baseURL}/post`,
+				},
+			],
+		};
+	},
 	async asyncData({ $content, params }) {
 		const posts = await $content("posts", params)
 			.sortBy("date", "desc")

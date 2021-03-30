@@ -26,7 +26,30 @@
 </template>
 
 <script>
-export default {};
+import getSiteMeta from "~/utils/getSiteMeta.js";
+
+export default {
+	computed: {
+		meta() {
+			const metaData = {
+				url: `${this.$config.baseURL}/about`,
+			};
+			return getSiteMeta(metaData);
+		},
+	},
+	head() {
+		return {
+			meta: [...this.meta],
+			link: [
+				{
+					hid: "canonical",
+					rel: "canonical",
+					href: `${this.$config.baseURL}/about`,
+				},
+			],
+		};
+	},
+};
 </script>
 
 <style scoped>

@@ -1,9 +1,30 @@
+const url = 'https://connorrothschild.com';
+
 export default {
 	// Target (https://go.nuxtjs.dev/config-target)
-	target          : 'static',
+	target              : 'static',
+
+	// Global CSS (https://go.nuxtjs.dev/config-css)
+	css                 : [ '~assets/scss/colors.scss' ],
+
+	// Plugins to run before rendering page (https://go.nuxtjs.dev/config-plugins)
+	plugins             : [ '~/plugins/v-img.js' ],
+	// Auto import components (https://go.nuxtjs.dev/config-components)
+	components          : true,
+
+	// Modules for dev and build (recommended) (https://go.nuxtjs.dev/config-modules)
+	buildModules        : [ '@aceforth/nuxt-optimized-images' ],
+
+	optimizedImages     : {
+		optimizeImages : true
+	},
+
+	publicRuntimeConfig : {
+		baseURL : process.env.BASE_URL || url
+	},
 
 	// Global page headers (https://go.nuxtjs.dev/config-head)
-	head            : {
+	head                : {
 		htmlAttrs : {
 			lang : 'en'
 		},
@@ -24,7 +45,7 @@ export default {
 			{
 				hid      : 'og:url',
 				property : 'og:url',
-				content  : 'https://www.connorrothschild.com'
+				content  : url
 			},
 			{
 				hid      : 'og:title',
@@ -39,13 +60,12 @@ export default {
 			{
 				hid      : 'og:image',
 				property : 'og:image',
-				content  :
-					'https://raw.githubusercontent.com/connorrothschild/connorrothschild.com/master/static/social.png'
+				content  : '/social.png'
 			},
 			{
 				hid     : 'twitter:url',
 				name    : 'twitter:url',
-				content : 'https://www.connorrothschild.com'
+				content : url
 			},
 			{
 				hid     : 'twitter:title',
@@ -60,8 +80,7 @@ export default {
 			{
 				hid     : 'twitter:image',
 				name    : 'twitter:image',
-				content :
-					'https://raw.githubusercontent.com/connorrothschild/connorrothschild.com/master/static/social.png'
+				content : '/social.png'
 			},
 			{
 				hid     : 'twitter:site',
@@ -77,33 +96,18 @@ export default {
 		link      : [ { rel: 'icon', type: 'image/x-icon', href: '/favicon.png' } ]
 	},
 
-	// Global CSS (https://go.nuxtjs.dev/config-css)
-	css             : [ '~assets/scss/colors.scss' ],
-
-	// Plugins to run before rendering page (https://go.nuxtjs.dev/config-plugins)
-	plugins         : [ '~/plugins/v-img.js' ],
-	// Auto import components (https://go.nuxtjs.dev/config-components)
-	components      : true,
-
-	// Modules for dev and build (recommended) (https://go.nuxtjs.dev/config-modules)
-	buildModules    : [ '@aceforth/nuxt-optimized-images' ],
-
-	optimizedImages : {
-		optimizeImages : true
-	},
-
-	generate        : {
+	generate            : {
 		fallback : true
 	},
 
-	image           : {
+	image               : {
 		// Options
 	},
 
 	// Modules (https://go.nuxtjs.dev/config-modules)
-	modules         : [ '@nuxtjs/bulma', '@nuxt/content', '@nuxt/image', '@nuxtjs/style-resources' ],
+	modules             : [ '@nuxtjs/bulma', '@nuxt/content', '@nuxt/image', '@nuxtjs/style-resources' ],
 
-	content         : {
+	content             : {
 		markdown : {
 			prism : {
 				// https://github.com/PrismJS/prism-themes
@@ -112,12 +116,12 @@ export default {
 		}
 	},
 
-	styleResources  : {
+	styleResources      : {
 		scss : [ './assets/scss/*.scss' ]
 	},
 
 	// Build Configuration (https://go.nuxtjs.dev/config-build)
-	build           : {
+	build               : {
 		postcss : {
 			preset : {
 				features : {
