@@ -1,3 +1,5 @@
+const url = 'https://elegant-wright-78ec6d.netlify.app';
+
 export default {
 	// Target (https://go.nuxtjs.dev/config-target)
 	target              : 'static',
