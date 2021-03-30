@@ -2,9 +2,10 @@ const type = 'website';
 const url = 'https://www.connorrothschild.com';
 const title = 'Connor Rothschild';
 const description = 'Connor Rothschild is a data scientist, web developer, and designer based in Houston Texas.';
-const mainImage = 'https://raw.githubusercontent.com/connorrothschild/connorrothschild.com/master/static/social.png';
+const mainImage = '/static/social.png';
 const twitterSite = '@CL_Rothschild';
 const twitterCard = 'summary_large_image';
+
 export default (meta) => {
 	return [
 		{
