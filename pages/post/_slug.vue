@@ -82,8 +82,7 @@ export default {
 				{
 					hid: "canonical",
 					rel: "canonical",
-					// FIXME:
-					href: `https://connorrothschild.com/post/${this.$route.params.slug}`,
+					href: `${this.$config.baseURL}/post/${this.$route.params.slug}`,
 				},
 			],
 		};
