@@ -25,7 +25,6 @@ Images for your blog posts should live in the folder `static/post/{your blog pos
 
 * Allows for fullscreen, gallery views via [`v-img`](https://github.com/crowdbotics/v-img).
 * Optimizes images with [`nuxt-optimized-images`](https://github.com/juliomrqz/nuxt-optimized-images).
-* Allows you to create grid-based layouts by specifying `width`.
 
 Use <InlineImage> as you would a normal `<img>` tag, specifying `src`, `alt`, and (if desired) `width`. You can also specify `:clickable=false` if you don't want to allow the user to view the image in a fullscreen gallery view.
 
@@ -39,5 +38,4 @@ The site relies on three colors: a primary (background), secondary (accent), and
 
 An example of this can be seen below the SCSS defaults that live within `assets/scss/colors.scss`. Simply uncomment those lines (preceded by the comment "LIGHT MODE") to see your site with light mode defaults.
 
-<img src="README-files/dark.png" alt="Dark mode" width="49%"/>
-<img src="README-files/light.png" alt="Light mode" width="49%"/>
+<img src="README-files/dark.png" alt="Dark mode" width="49%"/><img src="README-files/light.png" alt="Light mode" width="49%"/>
