@@ -1,6 +1,6 @@
 <template>
 	<div class="has-background-primary-off">
-		<Nav color="is-primary" />
+		<Nav color="has-background-primary"/>
 		<div class="fullscreen">
 			<article class="section max-width-78ch">
 				<!-- TITLE -->

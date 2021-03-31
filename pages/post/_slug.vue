@@ -1,6 +1,6 @@
 <template>
 	<div class="has-background-primary-off">
-		<Nav color="is-primary" />
+		<Nav color="has-background-primary"/>
 		<article class="section max-width-78ch mt-6">
 			<h1 class="title has-text-weight-boldest is-size-2 is-size-4-mobile">
 				{{ post.title }}
@@ -162,7 +162,7 @@ export default {
 	display: block;
 	float: left;
 	margin-left: -1.25rem;
-	color: black;
+	color: $text;
 	opacity: 0;
 	font-weight: 400;
 	font-size: 1.25rem;

@@ -15,7 +15,7 @@
 				class="navbar-burger"
 				aria-label="menu"
 				aria-expanded="false"
-				data-target="navbarBasicExample"
+				data-target="navbarID"
 				@click="isVisible = !isVisible"
 				:class="{ 'is-active': isVisible }"
 			>
@@ -26,11 +26,11 @@
 		</div>
 
 		<div
-			id="navbarBasicExample"
+			id="navbarID"
 			class="navbar-menu"
 			:class="{ 'is-active': isVisible }"
 		>
-			<div class="navbar-end">
+			<div class="navbar-end" :class="color">
 				<NuxtLink class="navbar-item" :to="{ path: '/post' }"> Blog </NuxtLink>
 				<NuxtLink class="navbar-item" :to="{ path: '/about' }">
 					About
@@ -69,4 +69,35 @@ export default {
 		font-size: 1.2rem;
 	}
 }
+
+.navbar.is-primary * {
+	color: $text !important;
+}
+
+
+	.has-background-primary{
+		background-color: $primary;
+	.navbar-item {
+		&:hover,
+		&:focus,
+		.is-active {
+			background-color: $primary-off;
+		}
+	}
+	}
+
+	.has-background-primary-off{ 
+		background-color: $primary-off; 
+	.navbar-item {
+		&:hover,
+		&:focus,
+		.is-active {
+			background-color: $primary;
+		}
+	}
+	}
+
+	.navbar-menu {
+		background: transparent;
+	}
 </style>

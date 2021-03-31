@@ -12,7 +12,7 @@ Welcome! Here's how to write a blog post. (Not how to write, but how to write a 
 
 To use an image, write `<InlineImage>` as you see below.
 
-```js
+```html
 <InlineImage src="post/welcome/photo.png" alt="Pikachu waving!">
 </InlineImage>
 ```
@@ -25,7 +25,7 @@ The images (`.png`, `.png`, `.gif`) that you reference here should live in `stat
 
 (You can also do GIFs):
 
-```js
+```html
 <InlineImage src="post/welcome/gif.gif" alt="Pikachu waving, in a GIF!">
 </InlineImage>
 ```
@@ -36,7 +36,7 @@ The images (`.png`, `.png`, `.gif`) that you reference here should live in `stat
 
 By specifying `width` in an `InlineImage`, you can create grid-based layouts:
 
-```js
+```html
 <InlineImage src="post/welcome/pokemon.png" alt="Pikachu waving!" width="49%"></InlineImage>
 <InlineImage src="post/welcome/gif.gif" alt="Pikachu waving, in a GIF!" width="49%"></InlineImage>
 <InlineImage src="post/welcome/gif.gif" alt="Pikachu waving, in a GIF!" width="49%"></InlineImage>
@@ -47,6 +47,28 @@ By specifying `width` in an `InlineImage`, you can create grid-based layouts:
 <InlineImage src="post/welcome/gif.gif" alt="Pikachu waving, in a GIF!" width="49%"></InlineImage>
 <InlineImage src="post/welcome/gif.gif" alt="Pikachu waving, in a GIF!" width="49%"></InlineImage>
 <InlineImage src="post/welcome/pokemon.png" alt="Pikachu waving!" width="49%"></InlineImage>
+
+### Info boxes
+
+The `<InfoBox>` component allows you to include quick notes in your blog posts.
+
+```html
+<info-box>
+  <template #info-box>
+
+  They look like this.
+
+    </template>
+</info-box>
+```
+
+<info-box>
+  <template #info-box>
+
+  They look like this.
+
+  </template>
+</info-box>
 
 ## Changing front matter
 

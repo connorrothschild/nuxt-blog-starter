@@ -32,7 +32,8 @@ $secondary-invert: invert($secondary);
 // https://www.darraghoriordan.com/2019/01/20/bulma-prismjs-in-gatsby-css-conflicts/
 .token.tag,
 .token.content,
-.token.number {
+.token.number,
+.token.operator {
   display: inline;
   padding: inherit;
   font-size: inherit;
@@ -55,16 +56,19 @@ $secondary-invert: invert($secondary);
 }
 
 // Better code formatting
+// Code formatting for chunks
 :not(pre) > code[class*="language-"], pre[class*="language-"] {
-  background: $black;
+  background: $black; 
 }
 
+// Inline code chunks
 code {
-  background-color: $primary !important;
+  background: $primary !important;
 }
 
-pre.language-js.line-numbers code {
-  background: transparent;
+// But don't apply that style to the code blocks
+pre code {
+  background: transparent !important;
 }
 
 /* Import the rest of Bulma */
