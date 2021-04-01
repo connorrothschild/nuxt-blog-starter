@@ -39,6 +39,7 @@ export default {
   },
   head() {
     return {
+      title: 'About | Connor Rothschild',
       meta: [...this.meta],
       link: [
         {
