@@ -1,5 +1,5 @@
 const type = 'website';
-const url = 'https://nuxt-blog-starter.netlify.app/';
+const url = 'https://nuxt-blog-starter.netlify.app';
 const title = 'Connor Rothschild';
 const description = 'Connor Rothschild is a data scientist, web developer, and designer based in Houston Texas.';
 const mainImage = `${url}/social.png`;

@@ -21,7 +21,7 @@ export default {
 </script>
 
 <style lang="scss">
-// GLOBAL STYLES!
+// GLOBAL STYLES
 html {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     "Helvetica Neue", Arial, sans-serif;
@@ -48,21 +48,30 @@ html {
   outline: 1px dashed #cecece;
 }
 
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 0.33s;
+}
+.fade-enter,
+.fade-leave-to {
+  opacity: 0;
+}
+
 .has-text-secondary {
   color: $secondary !important;
 }
 
-.has-background-off {
+.has-background-primary-off {
   background: $primary-off !important;
 }
 
-.has-background-gradient {
-  @extend .has-background;
+.has-background-primary-gradient {
+  @extend .has-background-primary;
   background-image: linear-gradient(0deg, $primary-off 0%, $primary 100%);
 }
 
-.has-background-gradient-rev {
-  @extend .has-background;
+.has-background-primary-gradient-rev {
+  @extend .has-background-primary;
   background-image: linear-gradient(0deg, $primary 0%, $primary-off 100%);
 }
 
@@ -144,7 +153,7 @@ html {
   }
 }
 
-.has-background-semitransparent {
+.has-background-primary-semitransparent {
   background: #cecece10 !important;
 
   p,

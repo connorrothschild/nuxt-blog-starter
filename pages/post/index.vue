@@ -1,6 +1,6 @@
 <template>
-  <div class="has-background-off">
-    <Nav color="has-background" />
+  <div class="has-background-primary-off">
+    <Nav color="has-background-primary" />
     <div class="fullscreen">
       <article class="section max-width-78ch">
         <!-- TITLE -->
@@ -8,7 +8,7 @@
         <!-- CONTAINER FOR PROJECTS -->
         <div class="columns is-multiline">
           <div v-for="(post, index) in posts" :key="index" class="column is-4">
-            <BlogCard v-bind="post" background="has-background" />
+            <BlogCard v-bind="post" background="has-background-primary" />
           </div>
         </div>
       </article>

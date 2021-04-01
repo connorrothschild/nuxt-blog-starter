@@ -65,11 +65,11 @@ export default {
   }
 }
 
-.navbar.has-background * {
+.navbar.has-background-primary * {
   color: $text !important;
 }
 
-.has-background {
+.has-background-primary {
   background-color: $primary;
   .navbar-item {
     &:hover,
@@ -80,7 +80,7 @@ export default {
   }
 }
 
-.has-background-off {
+.has-background-primary-off {
   background-color: $primary-off;
   .navbar-item {
     &:hover,

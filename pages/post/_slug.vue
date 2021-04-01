@@ -1,6 +1,6 @@
 <template>
-  <div class="has-background-off">
-    <Nav color="has-background" />
+  <div class="has-background-primary-off">
+    <Nav color="has-background-primary" />
     <article class="section max-width-78ch mt-6">
       <h1 class="title has-text-weight-boldest is-size-2 is-size-4-mobile">
         {{ post.title }}

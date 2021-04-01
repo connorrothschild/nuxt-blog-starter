@@ -1,6 +1,6 @@
 <template>
-  <div class="has-background-off">
-    <Nav color="has-background" />
+  <div class="has-background-primary-off">
+    <Nav color="has-background-primary" />
     <div class="fullscreen">
       <article class="section container">
         <div class="max-width-78ch">

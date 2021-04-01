@@ -1,5 +1,5 @@
 <template>
-  <section class="hero has-background has-background-gradient is-fullheight">
+  <section class="hero has-background-primary has-background-primary-gradient is-fullheight">
     <div class="hero-body">
       <div>
         <div>
@@ -40,25 +40,20 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.fade-enter-active,
-.fade-leave-active {
-  transition: opacity 0.33s;
-}
-.fade-enter,
-.fade-leave-to {
-  opacity: 0;
+h1,
+h2,
+p,
+span,
+a {
+	&::selection {
+		background: $secondary;
+		color: $primary;
+	}
 }
 
-// h1,
-// h2,
-// p,
-// span,
-// a {
-// 	&::selection {
-// 		background: $secondary;
-// 		color: $primary;
-// 	}
-// }
+a {
+  color: $text;
+}
 
 .is-size-huge {
   font-size: 4rem;
