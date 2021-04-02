@@ -27,11 +27,20 @@
 
     <div id="navbarID" class="navbar-menu" :class="{ 'is-active': isVisible }">
       <div class="navbar-end" :class="color">
-        <NuxtLink class="navbar-item" :to="{ path: '/post' }"> Blog </NuxtLink>
         <NuxtLink class="navbar-item" :to="{ path: '/about' }">
           About
         </NuxtLink>
-        <a class="navbar-item" href="#"> Resume </a>
+        <NuxtLink class="navbar-item" :to="{ path: '/post' }"> Blog </NuxtLink>
+        <!-- Have a resume hosted online somewhere? Uncomment below and add your resume link to the href! -->
+        <!-- Or, change the text of 'Resume' to anything else you want to link to! (Twitter, GitHub, etc): -->
+        <!-- <a
+          class="navbar-item"
+          href="https://docs.google.com/document/d/1qBH-wNMe2nv9Xa4uzHZ5wBevohwKuB3h2i9M2yk4POk/edit?usp=sharing"
+          rel="noopener noreferrer"
+          target="_blank"
+        >
+          Resume
+        </a> -->
       </div>
     </div>
   </nav>

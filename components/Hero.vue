@@ -1,5 +1,7 @@
 <template>
-  <section class="hero has-background-primary has-background-primary-gradient is-fullheight">
+  <section
+    class="hero has-background-primary has-background-primary-gradient is-fullheight"
+  >
     <div class="hero-body">
       <div>
         <div>
@@ -45,10 +47,10 @@ h2,
 p,
 span,
 a {
-	&::selection {
-		background: $secondary;
-		color: $primary;
-	}
+  &::selection {
+    background: $secondary;
+    color: $primary;
+  }
 }
 
 a {

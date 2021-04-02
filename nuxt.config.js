@@ -1,6 +1,10 @@
-const url = 'https://nuxt-blog-starter.netlify.app/';
+const url = 'https://nuxt-blog-starter.netlify.app';
 
 export default {
+	head                : {
+		link : [ { rel: 'icon', type: 'image/x-icon', href: '/favicon.png' } ]
+	},
+
 	// Target (https://go.nuxtjs.dev/config-target)
 	target              : 'static',
 
