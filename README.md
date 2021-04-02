@@ -2,17 +2,16 @@
 
 A simple, content-focused, minimal blog site built using NuxtJS and Bulma.
 
-Table of contents
 - [Get started](#get-started)
   * [Creating blog posts](#creating-blog-posts)
     + [Adding images](#adding-images)
-- [Features](#features)
+- [Blog features](#blog-features)
+  * [Info boxes!](#info-boxes-)
+  * [Better images!](#better-images-)
+  * [Videos!](#videos-)
+- [Site Features](#site-features)
   * [Easy theming](#easy-theming)
     + [Dark mode/light mode](#dark-mode-light-mode)
-  * [Blog features](#blog-features)
-    + [Info boxes!](#info-boxes-)
-    + [Better images!](#better-images-)
-    + [Videos!](#videos-)
   * [Image optimization](#image-optimization)
   * [Meta tags/SEO](#meta-tags-seo)
   * [Deploying your site](#deploying-your-site)
@@ -38,9 +37,34 @@ To create a blog post, simply copy an existing Markdown (`.md`) file that lives 
 
 Images for your newly created blog post should live in the folder `static/post/{your blog post}/`. For example, if your blog post had the filename `hello.md`, you should make an images folder titled `static/post/hello/`.
 
-You'll then include those images using my component `<InlineImage>`, which I'll talk about [later](#blog-features)
+You'll then include those images using my component `<InlineImage>`, which I'll talk about [later](#blog-features).
 
 Use <InlineImage> as you would a normal `<img>` tag, specifying `src`, `alt`, and (if desired) `width`. You can also specify `:clickable=false` if you don't want to allow the user to view the image in a fullscreen gallery view.
+
+## Blog features
+
+This site comes with all the same blog capabilities as a normal site, such as syntax highlighting, images, HTML support, and Vue components. Read [this](https://nuxtjs.org/blog/creating-blog-with-nuxt-content/) if you're curious about features.
+
+You can also include a few custom components I've made:
+
+### Info boxes!
+
+**[`InfoBox.vue`](https://github.com/connorrothschild/nuxt-blog-starter/blob/master/components/global/InfoBox.vue)** is component that allows you to put notes/warnings/messages in your blog posts. Feel free to edit the component to adjust its styling.
+
+### Better images!
+
+**[`InlineImage.vue`](https://github.com/connorrothschild/nuxt-blog-starter/blob/master/components/global/InlineImage.vue)** optimizes and handles the messy parts of images. 
+
+In specific, it:
+
+* Allows for fullscreen, gallery views via [`v-img`](https://github.com/crowdbotics/v-img).
+* Optimizes images with [`nuxt-optimized-images`](https://github.com/juliomrqz/nuxt-optimized-images).
+
+### Videos!
+
+**[`ResponsiveVideo.vue`](https://github.com/connorrothschild/nuxt-blog-starter/blob/master/components/global/ResponsiveVideo.vue)** takes a YouTube url (or otherwise embeddable video link) and makes it responsive.
+
+You can see all of these components in action in the [sample blog post](https://nuxt-blog-starter.netlify.app/post/welcome).
 
 ## Site Features
 
@@ -54,31 +78,6 @@ An example of this can be seen below the Sass defaults that live within `assets/
 
 <img src="README-files/dark.png" alt="Dark mode" width="49%"/><img src="README-files/light.png" alt="Light mode" width="49%"/>
 
-### Blog features
-
-This site comes with all the same blog capabilities as a normal site, such as syntax highlighting, images, HTML support, and Vue components. Read [this](https://nuxtjs.org/blog/creating-blog-with-nuxt-content/) if you're curious about features.
-
-You can also include a few custom components I've made:
-
-#### Info boxes!
-
-**[`InfoBox.vue`](https://github.com/connorrothschild/nuxt-blog-starter/blob/master/components/global/InfoBox.vue)** is component that allows you to put notes/warnings/messages in your blog posts. Feel free to edit the component to adjust its styling.
-
-#### Better images!
-
-**[`InlineImage.vue`](https://github.com/connorrothschild/nuxt-blog-starter/blob/master/components/global/InlineImage.vue)** optimizes and handles the messy parts of images. 
-
-In specific, it:
-
-* Allows for fullscreen, gallery views via [`v-img`](https://github.com/crowdbotics/v-img).
-* Optimizes images with [`nuxt-optimized-images`](https://github.com/juliomrqz/nuxt-optimized-images).
-
-#### Videos!
-
-**[`ResponsiveVideo.vue`](https://github.com/connorrothschild/nuxt-blog-starter/blob/master/components/global/ResponsiveVideo.vue)** takes a YouTube url (or otherwise embeddable video link) and makes it responsive.
-
-You can see all of these components in action in the [sample blog post](https://nuxt-blog-starter.netlify.app/post/welcome).
-
 ### Image optimization
 
 Images are optimized during build thanks to [`nuxt-optimized-images`](https://github.com/juliomrqz/nuxt-optimized-images).
@@ -87,7 +86,7 @@ Images are optimized during build thanks to [`nuxt-optimized-images`](https://gi
 
 Setting proper meta tags for your site is important for effective search engine optimization (SEO) rankings. Use `getSiteMeta()`, found in the `utils/` folder, to provide different tags for each page and for each blog post. This file allows the Twitter Cards for my home page and for a blog post to look different, like this: 
 
-<img src="README-files/home-card.png" alt="Twitter card of homepage" width="49%"/><img src="README-files/blog-card.png" alt="Twitter card of blog post page" width="49%"/>
+<img src="README-files/home-card.png" alt="Twitter card of homepage" width="47.2%"/><img src="README-files/blog-card.png" alt="Twitter card of blog post page" width="50%"/>
 
 The site is set up so that your cards will appear this way automatically! All you will have to do is edit `utils/getSiteMeta()`, as you'll read about [later](#setting-a-base-url-and-site-metadata). Page-specific meta tags are also helpful for search engine optimization; you might attract a larger number of visitors if you have a variety of keywords.
 

@@ -2,7 +2,9 @@ const url = 'https://nuxt-blog-starter.netlify.app';
 
 export default {
 	head                : {
-		link : [ { rel: 'icon', type: 'image/x-icon', href: '/favicon.png' } ]
+		htmlAttrs : { lang: 'en' },
+		meta      : [ { charset: 'utf-8' }, { name: 'viewport', content: 'width=device-width, initial-scale=1' } ],
+		link      : [ { rel: 'icon', type: 'image/x-icon', href: '/favicon.png' } ]
 	},
 
 	// Target (https://go.nuxtjs.dev/config-target)
