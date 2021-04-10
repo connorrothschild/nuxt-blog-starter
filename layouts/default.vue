@@ -173,4 +173,11 @@ hr {
   opacity: 0.3;
   height: 1px !important;
 }
+
+// By default, v-img places fullscreen image *behind header*
+// Here, push the image down 50px (height of header) and resize accordingly
+.content-v-img img {
+  top: 50px !important;
+  max-height: calc(100% - 50px) !important;
+}
 </style>
