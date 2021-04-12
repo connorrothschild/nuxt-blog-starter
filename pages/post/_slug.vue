@@ -96,7 +96,7 @@ export default {
   h1 {
     font-weight: bold;
     font-size: 1.8rem;
-    margin: 1rem 0;
+    margin: 0.75rem 0;
     @media screen and (max-width: 768px) {
       font-size: 1.4rem;
     }
@@ -104,7 +104,7 @@ export default {
   h2 {
     font-weight: bold;
     font-size: 1.6rem;
-    margin: 1rem 0;
+    margin: 0.75rem 0;
     @media screen and (max-width: 768px) {
       font-size: 1.3rem;
     }
@@ -112,7 +112,7 @@ export default {
   h3 {
     font-weight: bold;
     font-size: 1.4rem;
-    margin: 1rem 0;
+    margin: 0.75rem 0;
     @media screen and (max-width: 768px) {
       font-size: 1.2rem;
     }
@@ -127,28 +127,51 @@ export default {
   }
 
   p {
-    margin-bottom: 1rem;
+    margin-bottom: 1.25rem;
     font-size: 1.1rem;
 
-    .nuxt-content p:last-child {
-      margin-bottom: 0;
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  }
+
+  a {
+    color: $secondary;
+
+    &:hover {
+      color: $text;
+      text-decoration: underline;
     }
   }
 
+  blockquote {
+    padding: 0 1rem;
+    border-left: 5px solid $secondary;
+    margin: 1rem;
+  }
+
   li {
-    list-style: inside !important;
+    list-style-position: inside !important;
+  }
+
+  ol, ul {
+    margin-left: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  ul li {
+    list-style-type: circle;
   }
 
   // Give a padding to anything that follows an image, except another image
-  .img + :not(.img) {
-    margin-top: 1rem;
-  }
-
   // And same for if the image follows anything that is not an image
-  :not(.img) + .img {
+  .img + :not(.img),
+    :not(.img) + .img {
     margin-top: 1rem;
   }
 }
+
 // Hover icon link
 .icon.icon-link {
   width: 0;
