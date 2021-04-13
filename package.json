@@ -15,6 +15,7 @@
     "nuxt": "^2.14.12",
     "nuxt-gallery": "^2.0.0",
     "nuxt-lazy-load": "^1.2.4",
+    "nuxt-purgecss": "^1.0.0",
     "prism-themes": "^1.5.0",
     "v-img": "^0.2.0",
     "vue-gallery": "^2.0.1",
@@ -23,6 +24,7 @@
   "devDependencies": {
     "@aceforth/nuxt-optimized-images": "^1.4.0",
     "@nuxt/image": "0.0.4",
+    "@nuxtjs/pwa": "^3.3.5",
     "@nuxtjs/style-resources": "^1.0.0",
     "babel-eslint": "^10.1.0",
     "compass-mixins": "^0.12.10",
