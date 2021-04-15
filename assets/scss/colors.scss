@@ -56,21 +56,20 @@ $secondary-invert: invert($secondary);
 
 // Better code formatting
 // Code formatting for chunks
-:not(pre) > code[class*="language-"],
 pre[class*="language-"] {
-  background: $black-off;
+  background: $black;
 }
 
 // Inline code chunks
-code {
-  background: $black !important;
+:not(pre)>code {
+  background: $secondary-bg !important;
   color: $secondary !important;
-}
-
-// But don't apply that style to the code blocks
-pre code {
-  background: transparent !important;
-  color: $white !important;
+  padding: 6px 4px;
+  border-radius: 3px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
 }
 
 /* Import the rest of Bulma */
