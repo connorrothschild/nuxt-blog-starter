@@ -62,7 +62,7 @@ pre[class*="language-"] {
 }
 
 // Inline code chunks
-:not(pre)>code {
+code {
   background: $secondary-bg !important;
   color: $secondary !important;
   padding: 6px 4px;
@@ -71,6 +71,12 @@ pre[class*="language-"] {
   -moz-border-radius: 3px;
   -ms-border-radius: 3px;
   -o-border-radius: 3px;
+}
+
+// But don't apply that style to the code blocks
+pre code {
+  background: transparent !important;
+  color: $white !important;
 }
 
 /* Import the rest of Bulma */
