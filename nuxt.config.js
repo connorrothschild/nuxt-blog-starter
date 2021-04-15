@@ -19,7 +19,7 @@ export default {
 	components          : true,
 
 	// Modules for dev and build (recommended) (https://go.nuxtjs.dev/config-modules)
-	buildModules        : [ '@aceforth/nuxt-optimized-images', 'nuxt-purgecss', '@nuxtjs/pwa' ],
+	buildModules        : [ '@aceforth/nuxt-optimized-images', '@nuxtjs/pwa' ],
 
 	optimizedImages     : {
 		optimizeImages : true
