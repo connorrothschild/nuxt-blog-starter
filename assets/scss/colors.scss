@@ -28,12 +28,11 @@ $secondary-bg: rgba($secondary, .1);
 $primary-invert: invert($primary);
 $secondary-invert: invert($secondary);
 
-// Resolve Prism/Bulma conflicts 
+// Resolve Prism/Bulma conflicts
 // https://www.darraghoriordan.com/2019/01/20/bulma-prismjs-in-gatsby-css-conflicts/
 .token.tag,
 .token.content,
-.token.number,
-.token.operator {
+.token.number {
   display: inline;
   padding: inherit;
   font-size: inherit;
@@ -52,25 +51,20 @@ $secondary-invert: invert($secondary);
 .token.prolog,
 .token.doctype,
 .token.cdat {
-  color:#3D9970;
+  color: #3d9970;
 }
 
 // Better code formatting
 // Code formatting for chunks
+:not(pre) > code[class*="language-"],
 pre[class*="language-"] {
-  background: $black; 
+  background: $black-off;
 }
 
 // Inline code chunks
 code {
-  background: $secondary-bg !important;
+  background: $black !important;
   color: $secondary !important;
-  padding: 6px 4px;
-  border-radius: 3px;
-  -webkit-border-radius: 3px;
-  -moz-border-radius: 3px;
-  -ms-border-radius: 3px;
-  -o-border-radius: 3px;
 }
 
 // But don't apply that style to the code blocks
