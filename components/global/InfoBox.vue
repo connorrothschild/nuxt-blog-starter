@@ -5,11 +5,13 @@
 </template>
 
 <style scoped lang="scss">
-// img {
-// 	max-width: 30px;
-// 	max-height: 30px;
-// 	margin-right: 1em;
-// }
+
+.info-box::before {
+  content: "❗";
+  font-size: 1.5rem;
+  margin-right: .5rem;
+}
+
 .info-box {
   display: flex;
   place-items: center;

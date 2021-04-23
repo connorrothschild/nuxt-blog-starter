@@ -49,15 +49,6 @@ html {
   outline: 1px dashed #cecece;
 }
 
-.fade-enter-active,
-.fade-leave-active {
-  transition: opacity 0.33s;
-}
-.fade-enter,
-.fade-leave-to {
-  opacity: 0;
-}
-
 .has-text-secondary {
   color: $secondary !important;
 }

@@ -20,6 +20,9 @@ $text-strong: $white; // Applies to titles; text bolded with <strong>
 // $text: $black-off; // Applies to body text
 // $text-strong: $black; // Applies to titles; text bolded with <strong>
 
+// Semitransparent helper
+$semitransparent: #cecece10;
+
 // Secondary colors
 $secondary: rgb(46, 201, 151);
 $secondary-bg: rgba($secondary, .1);
