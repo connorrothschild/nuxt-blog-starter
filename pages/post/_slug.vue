@@ -3,7 +3,8 @@
     <Nav color="has-background-primary" />
     <article class="section max-width-78ch mt-6">
       <h2 class="heading is-size-6 has-text-weight-light">
-        {{ formatDate(post.date) }} | <ReadingTime :content="post"></ReadingTime>
+        {{ formatDate(post.date) }} |
+        <ReadingTime :content="post"></ReadingTime>
       </h2>
       <h1 class="title my-3 has-text-weight-boldest is-size-2 is-size-3-mobile">
         {{ post.title }}
@@ -35,12 +36,22 @@ import { TweenMax, Power3 } from "gsap";
 
 export default {
   transition: {
-      mode: 'out-in',
-      css: false,
-      enter () {
-        TweenMax.fromTo(".title", {x: "10%"}, {x: "0%" , duration: 0.1});
-        TweenMax.fromTo(".subtitle, .card, .img", {x: "10%", autoAlpha: 0}, {x: "0%", autoAlpha: 1, delay: 0.25, duration: 0.5, ease: Power3.easeOut});
-      },
+    mode: "out-in",
+    css: false,
+    enter() {
+      TweenMax.fromTo(".title", { x: "10%" }, { x: "0%", duration: 0.1 });
+      TweenMax.fromTo(
+        ".subtitle, .card, .img",
+        { x: "10%", autoAlpha: 0 },
+        {
+          x: "0%",
+          autoAlpha: 1,
+          delay: 0.25,
+          duration: 0.5,
+          ease: Power3.easeOut,
+        }
+      );
+    },
   },
   async asyncData({ $content, params }) {
     const post = await $content("posts", params.slug).fetch();
@@ -139,10 +150,9 @@ export default {
     margin-bottom: 1.25rem;
     font-size: 1.1rem;
 
-  &:last-child {
-    margin-bottom: 0;
-  }
-
+    &:last-child {
+      margin-bottom: 0;
+    }
   }
 
   a {
@@ -165,7 +175,8 @@ export default {
     list-style-position: inside !important;
   }
 
-  ol, ul {
+  ol,
+  ul {
     margin-left: 1rem;
     margin-bottom: 1rem;
   }
@@ -177,7 +188,7 @@ export default {
   // Give a padding to anything that follows an image, except another image
   // And same for if the image follows anything that is not an image
   .img + :not(.img),
-    :not(.img) + .img {
+  :not(.img) + .img {
     margin-top: 1rem;
   }
 }

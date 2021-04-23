@@ -23,12 +23,26 @@ import { TweenMax, Power3 } from "gsap";
 
 export default {
   transition: {
-      mode: 'out-in',
-      css: false,
-      enter () {
-        TweenMax.fromTo(".section-title", {x: "10%"}, {x: "0%" , duration: 0.1});
-        TweenMax.fromTo(".columns", {x: "10%", autoAlpha: 0}, {x: "0%", autoAlpha: 1, delay: 0.25, duration: 0.5, ease: Power3.easeOut});
-      },
+    mode: "out-in",
+    css: false,
+    enter() {
+      TweenMax.fromTo(
+        ".section-title",
+        { x: "10%" },
+        { x: "0%", duration: 0.1 }
+      );
+      TweenMax.fromTo(
+        ".columns",
+        { x: "10%", autoAlpha: 0 },
+        {
+          x: "0%",
+          autoAlpha: 1,
+          delay: 0.25,
+          duration: 0.5,
+          ease: Power3.easeOut,
+        }
+      );
+    },
   },
   computed: {
     meta() {

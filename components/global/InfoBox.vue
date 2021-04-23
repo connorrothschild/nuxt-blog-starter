@@ -5,11 +5,10 @@
 </template>
 
 <style scoped lang="scss">
-
 .info-box::before {
   content: "❗";
   font-size: 1.5rem;
-  margin-right: .5rem;
+  margin-right: 0.5rem;
 }
 
 .info-box {

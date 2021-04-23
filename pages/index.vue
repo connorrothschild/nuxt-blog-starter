@@ -8,6 +8,7 @@
 
 <script>
 import getSiteMeta from "~/utils/getSiteMeta.js";
+
 export default {
   computed: {
     meta() {
