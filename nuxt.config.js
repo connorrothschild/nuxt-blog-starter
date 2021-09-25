@@ -1,4 +1,4 @@
-const url = 'https://nuxt-blog-starter.netlify.app';
+const url = 'https://frosty-tesla-0045f8.app';
 
 export default {
 	head                : {
